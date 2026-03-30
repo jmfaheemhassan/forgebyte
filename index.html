@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +8,29 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Segoe UI', system-ui, Arial, sans-serif;
             background-color: #0A1428;
             color: #E2E8F0;
+            line-height: 1.6;
         }
         header {
             background: linear-gradient(135deg, #0A1428, #1E2937);
-            padding: 100px 20px 130px;
+            padding: 120px 20px 140px;
             text-align: center;
         }
-        .logo-container img {
-            max-width: 520px;
-            height: auto;
-            filter: drop-shadow(0 15px 40px rgba(0, 245, 255, 0.4));
+        .main-title {
+            font-size: 4.8rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: -2px;
+            margin-bottom: 15px;
         }
         .tagline {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: #67E8F9;
-            margin-top: 25px;
-            letter-spacing: 2px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin-top: 10px;
         }
         .container {
             max-width: 1100px;
@@ -34,47 +39,63 @@
         }
         section {
             background: #1E2937;
-            padding: 50px;
-            margin: 30px 0;
+            padding: 55px 45px;
+            margin: 35px 0;
             border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
         }
-        h2 { color: #0D6EFD; font-size: 2.2rem; margin-bottom: 20px; }
-        p { font-size: 1.15rem; color: #CBD5E1; }
+        h2 {
+            color: #0D6EFD;
+            font-size: 2.3rem;
+            margin-bottom: 22px;
+        }
+        p {
+            font-size: 1.18rem;
+            color: #CBD5E1;
+        }
         .btn {
+            display: inline-block;
             background: #0D6EFD;
             color: white;
-            padding: 15px 35px;
+            padding: 16px 38px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            display: inline-block;
             margin-top: 30px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #3B82F6;
+            transform: translateY(-4px);
+        }
+        footer {
+            background: #0A1428;
+            text-align: center;
+            padding: 50px 20px;
+            color: #94A3B8;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="ForgeByte Logo">
-        </div>
-        <p class="tagline">Forging Digital Solutions with Every Byte</p>
+        <h1 class="main-title">ForgeByte</h1>
+        <p class="tagline">FORGING DIGITAL SOLUTIONS WITH EVERY BYTE</p>
     </header>
 
     <div class="container">
         <section>
             <h2>About ForgeByte</h2>
-            <p>We are a team of CSE students passionate about learning web development and building modern digital solutions.</p>
+            <p> A passionate team of Computer Science & Engineering students dedicated to learning modern web development and building clean, responsive digital solutions.</p>
         </section>
 
         <section>
             <h2>Our Services</h2>
-            <p>Services are coming soon. We are currently in the learning phase.</p>
-            <a href="#" class="btn">Contact Us</a>
+            <p style="font-style: italic; color: #94A3B8;">
+                 Currently in the learning phase. Full services will be available soon.
+            </p>
+            <a href="#" class="btn">Get In Touch</a>
         </section>
     </div>
 
-    <footer style="background: #0A1428; text-align: center; padding: 50px 20px; color: #94A3B8;">
-        <p><strong>ForgeByte</strong> — Made with ❤️ by CSE Students</p>
-    </footer>
 </body>
 </html>
